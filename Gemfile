@@ -58,3 +58,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+gem "ruby-openai", "~> 5.2"
+
+gem "rspec-rails", group: [:development , :test ]
+gem "stimulus-rails"
+
+gem "importmap-rails", "~> 2.2"
