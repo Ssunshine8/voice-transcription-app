@@ -64,3 +64,5 @@ gem "rspec-rails", group: [:development , :test ]
 gem "stimulus-rails"
 
 gem "importmap-rails", "~> 2.2"
+
+gem "figaro", "~> 1.3"

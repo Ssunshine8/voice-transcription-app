@@ -1,0 +1,30 @@
+<h1>Live Transcription</h1>
+
+
+<div data-controller="transcribe">
+	<button data-action="click->transcribe#start" data-transcribe-target="startBtn">Start Listening</button>
+	<button data-action="click->transcribe#stop" data-transcribe-target="stopBtn" disabled>Stop Listening</button>
+
+
+	<div>
+		<h3>Live</h3>
+		<div data-transcribe-target="live" style="min-height: 3rem; border: 1px solid #ddd; padding: 8px;">
+		<!-- live words appear here -->
+		</div>
+	</div>
+
+
+	<div>
+		<h3>Final Transcription</h3>
+		<pre data-transcribe-target="final" style="white-space: pre-wrap;"></pre>
+	</div>
+
+
+	<div>
+			<h3>Summary</h3>
+			<pre data-transcribe-target="summary"></pre>
+	</div>
+</div>
+
+
+<p class="note">Uses browser Web Speech API (Chrome/Edge). Not supported in all browsers.</p>
